@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: ospic-webapp
+    env: static
+    buildCommand: npm install && npm run generate
+    staticPublishPath: dist
+    envVars:
+      - key: BASE_URL
+        value: https://demo.ospic.org/api/v1
